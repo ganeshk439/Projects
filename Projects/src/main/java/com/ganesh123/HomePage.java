@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class HomePage extends HttpServlet {
 	public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException{
+
 		PrintWriter pw=null;
 		String name=null,tage=null;
 		pw=res.getWriter();
@@ -18,5 +19,6 @@ public class HomePage extends HttpServlet {
 		pw.println( "name is "+name);
 		pw.println("age is "+tage);
 		pw.close();
+// for sample push to github projects under projects 
 	}
 }
